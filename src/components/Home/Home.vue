@@ -32,10 +32,12 @@ export default {
 
 <style>
 .el-header {
-  background-color: #b3c0d1;
+  /* background-color: #b3c0d1; */
+  background-color: #666;
   color: #333;
   text-align: center;
-  line-height: 60px;
+  line-height: 80px;
+  height: 80px !important;
 }
 
 .el-aside {
@@ -43,7 +45,8 @@ export default {
   color: #333;
   text-align: center;
   line-height: 200px;
-  height: 100%;
+  /* height: 100%; */
+  /* height: calc(100vh); */
 }
 
 .el-main {

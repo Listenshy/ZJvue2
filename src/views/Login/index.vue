@@ -18,6 +18,7 @@
           <el-button type="primary" @click="submitForm('ruleForm')"
             >立即登录</el-button
           >
+          <el-button type="primary" @click="register">立即注册</el-button>
         </el-form-item>
       </div>
     </el-form>
@@ -51,18 +52,22 @@ export default {
         }
       });
     },
+    register() {
+      this.$router.push("/register");
+    },
   },
 };
 </script>
 
 <style>
 body {
-  background: url(@/assets/zijie.jpeg);
+  /* background: url(@/assets/zijie.jpeg); */
 }
 .box {
   width: 700px;
   height: 300px;
-  background-color: white;
+  /* background-color: white; */
+  background-color: aquamarine;
   padding: 1px;
   opacity: 0.8;
   border-radius: 40px;

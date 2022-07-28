@@ -44,4 +44,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.el-menu {
+  height: calc(100vh);
+}
+</style>
