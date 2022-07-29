@@ -11,11 +11,11 @@
     >
       <el-menu-item index="/home">
         <i class="el-icon-menu"></i>
-        <span slot="title">路由一</span>
+        <span slot="title">前端列表</span>
       </el-menu-item>
       <el-menu-item index="/console">
         <i class="el-icon-menu"></i>
-        <span slot="title">路由二</span>
+        <span slot="title">前端监控报警规则</span>
       </el-menu-item>
       <el-menu-item index="/chart">
         <i class="el-icon-menu"></i>
@@ -28,19 +28,6 @@
 <script>
 export default {
   name,
-  // data() {
-  //   return {
-  //     routes: this.$router.options.routes,
-  //   };
-  // },
-  created() {
-    this.RouteTrue();
-  },
-  methods: {
-    RouteTrue() {
-      // console.log(this.routes);
-    },
-  },
 };
 </script>
 

@@ -1,27 +1,29 @@
 <template>
-  <div class="box">
-    <el-form
-      :model="ruleForm"
-      :rules="rules"
-      ref="ruleForm"
-      label-width="100px"
-      class="demo-ruleForm"
-    >
-      <div>
-        <el-form-item label="账号" prop="name">
-          <el-input v-model="ruleForm.name"></el-input>
-        </el-form-item>
-        <el-form-item label="密码" prop="password">
-          <el-input v-model="ruleForm.password"></el-input>
-        </el-form-item>
-        <el-form-item>
-          <el-button type="primary" @click="submitForm('ruleForm')"
-            >立即登录</el-button
-          >
-          <el-button type="primary" @click="register">立即注册</el-button>
-        </el-form-item>
-      </div>
-    </el-form>
+  <div class="outer">
+    <div class="box">
+      <el-form
+        :model="ruleForm"
+        :rules="rules"
+        ref="ruleForm"
+        label-width="100px"
+        class="demo-ruleForm"
+      >
+        <div>
+          <el-form-item label="账号" prop="name">
+            <el-input v-model="ruleForm.name"></el-input>
+          </el-form-item>
+          <el-form-item label="密码" prop="password">
+            <el-input v-model="ruleForm.password"></el-input>
+          </el-form-item>
+          <el-form-item>
+            <el-button type="primary" @click="submitForm('ruleForm')"
+              >立即登录</el-button
+            >
+            <el-button type="primary" @click="register">立即注册</el-button>
+          </el-form-item>
+        </div>
+      </el-form>
+    </div>
   </div>
 </template>
 
@@ -60,8 +62,11 @@ export default {
 </script>
 
 <style>
-body {
-  /* background: url(@/assets/zijie.jpeg); */
+.outer {
+  height: calc(100vh);
+  background: url(@/assets/zi.jpg) no-repeat;
+  background-size: 100% 100%;
+  /* background-attachment: fixed; */
 }
 .box {
   width: 700px;

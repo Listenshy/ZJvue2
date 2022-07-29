@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="Home">
     <router-view></router-view>
   </div>
 </template>
@@ -10,4 +10,11 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+/* .Home {
+  height: calc(100vh);
+  background: url(@/assets/zhuye.jpeg) no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.1;
+} */
+</style>
